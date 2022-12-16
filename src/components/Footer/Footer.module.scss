@@ -1,0 +1,30 @@
+.footer_main{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 40px;
+    background-color: #282c34;
+    font-family:  Bahnschrift Condensed;
+    color: #FFFFFF;
+  }
+  
+  .nav_link {
+    display: block;
+    color: #FFFFFF; 
+    text-decoration: none;
+    padding-top: 10px;
+    
+  }
+  
+  .nav_link:hover {
+    text-decoration: underline;
+    transition: 0.3s;
+  }
+  
+  .signUp {
+    font-size: 10px;
+    background-repeat: repeat-x;
+   animation: slide 30s linear infinite; 
+  }
+  
+ 
