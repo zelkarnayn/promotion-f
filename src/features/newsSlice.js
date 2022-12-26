@@ -88,7 +88,19 @@ const newsSlice = createSlice({
             state.loading = false
             state.news = state.news.filter(item => item._id !== action.payload._id)
         })
-        
+        .addCase(addNews.pending, (state, action) => {
+            state.loading = true
+            state.error = null
+        })
+        .addCase(addNews.rejected, (state, action) => {
+            state.loading = false
+            state.error = action.payload
+        })
+        .addCase(addNews.fulfilled, (state, action) => {
+            console.log("ACTION", action.payload)
+            state.loading = false
+            state.news = state.news.push(action.payload)
+        })
 
     }
 })

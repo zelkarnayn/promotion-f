@@ -6,9 +6,11 @@ import AboutUs from './components/HomePage/About/AboutUs';
 
 import Shop from './components/Shop/Shop';
 import Admin from './components/Admin';
-import NewsGet from './components/News/AllNews/NewsGet';
-import NewsFull from './components/News/FullNews';
-import NewsForm from './components/News/NewsForm';
+import Carousel from "./components/Carousel/Carousel"
+
+import NewsGet from './components/news/AllNews/NewsGet';
+import NewsFull from './components/news/FullNews';
+import NewsForm from './components/news/NewsForm';
 import Cart from './components/Shop/Cart/Cart';
 import Product from './components/Shop/Product';
 import CardArray from './components/Cards/CardArray';
@@ -16,7 +18,7 @@ import CardArray from './components/Cards/CardArray';
 function App() {
   return (
     <div className="App">
-      <Routes>
+       <Routes>
         <Route path='/' element={<Layot/>}>
           <Route index element={<HomePage/>}/>
           <Route path='/about' element={<AboutUs/>}/>
@@ -29,7 +31,8 @@ function App() {
           <Route path="/cart" element = {<Cart/>} />
           <Route path="/product/:id" element = {<Product/>} />
         </Route>
-      </Routes>
+      </Routes> 
+        
     </div>
   );
 }

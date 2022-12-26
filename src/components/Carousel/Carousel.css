@@ -20,3 +20,6 @@ color: rgb(214, 0, 0);
 .slick-dots li button:before{
     color: red;
 }
+h2 {
+    color: white;
+}
