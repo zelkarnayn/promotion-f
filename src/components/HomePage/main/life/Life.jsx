@@ -25,7 +25,7 @@ export default function Life() {
   return (
     <div>
         <div>
-            <div className={styles.life}>наша жизнь</div>
+            <div className={styles.life}>Вне Актагона</div>
             <div>
               <Points/>
             </div>
