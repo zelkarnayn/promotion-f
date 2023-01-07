@@ -6,7 +6,7 @@ import login from './login.png'
 
 import { useDispatch, useSelector } from 'react-redux'
 import { modalState } from '../../../features/auth.slice'
-import Authorization from '../../Auth/Authorization'
+import Authorization from '../../auth/Authorization'
 
 export default function Header() {
   const dispatch = useDispatch()
