@@ -8,9 +8,9 @@ import Shop from './components/Shop/Shop';
 import Admin from './components/Admin';
 // import Carousel from "./components/Carousel/Carousel"
 
-import NewsGet from './components/News/AllNews/NewsGet';
-import NewsFull from './components/News/FullNews';
-import NewsForm from './components/News/NewsForm';
+import NewsGet from './components/news/AllNews/NewsGet';
+import NewsFull from './components/news/FullNews';
+import NewsForm from './components/news/NewsForm';
 import Cart from './components/Shop/Cart/Cart';
 import Product from './components/Shop/Product';
 import CardArray from './components/Cards/CardArray';
