@@ -22,7 +22,6 @@
     "react-router-dom": "^6.6.1",
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
-    "react-yandex-maps": "^4.6.0",
     "sass": "^1.56.2",
     "slick-carousel": "^1.8.1",
     "tinymce": "^6.3.1",
