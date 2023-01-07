@@ -11,7 +11,7 @@ export const getCart = createAsyncThunk(
     'cart/get',
     async (data, thunkAPI) => {
         try {
-            const res = await fetch('http://localhost:4000/cart/get')
+            const res = await fetch(process.env.BACK_URL + '/cart/get')
             const cart = await res.json()
             if (cart.error) {
                 return thunkAPI.rejectWithValue(cart.error)
@@ -27,7 +27,7 @@ export const addToCart = createAsyncThunk(
     'cart/post',
     async (productId, thunkAPI) => {
         try {
-            const res = await fetch('http://localhost:4000/cart/post', {
+            const res = await fetch(process.env.BACK_URL + '/cart/post', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -51,7 +51,7 @@ export const changeCart = createAsyncThunk(
     'cart/patch',
     async (data, thunkAPI) => {
         try {
-            const res = await fetch(`http://localhost:4000/cart/patch/${data.id}`, {
+            const res = await fetch(`${process.env.BACK_URL}/cart/patch/${data.id}`, {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json'
@@ -76,7 +76,7 @@ export const deleteFromCart = createAsyncThunk(
     'cart/delete',
     async (id, thunkAPI) => {
         try {
-            const res = await fetch(`http://localhost:4000/cart/delete/${id}`, {
+            const res = await fetch(`${process.env.BACK_URL}/cart/delete/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json'

@@ -13,7 +13,7 @@ export const getProducts = createAsyncThunk(
   "products/get",
   async (_, thunkAPI) => {
     try {
-      const res = await fetch("http://localhost:4000/products");
+      const res = await fetch(process.env.BACK_URL + "/products");
       const products = await res.json();
       return products;
     } catch (error) {
@@ -26,7 +26,7 @@ export const getProduct = createAsyncThunk(
   "product/get",
   async (id, thunkAPI) => {
     try {
-      const res = await fetch(`http://localhost:4000/product/${id}`);
+      const res = await fetch(`${process.env.BACK_URL}/product/${id}`);
       const product = await res.json();
       return product;
     } catch (error) {
@@ -47,7 +47,7 @@ export const createProduct = createAsyncThunk(
       formData.append("size", data.size);
       formData.append("description", data.description);
 
-      const res = await axios.post("http://localhost:4000/product", formData);
+      const res = await axios.post(process.env.BACK_URL + "/product", formData);
       const newProduct = res.json();
       return newProduct;
     } catch (error) {
@@ -60,7 +60,7 @@ export const updateProduct = createAsyncThunk(
   "product/update",
   async (data, thunkAPI) => {
     try {
-      const res = fetch(`http://localhost:4000/product/${data.id}`, {
+      const res = fetch(`${process.env.BACK_URL}/product/${data.id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",

@@ -9,7 +9,7 @@ const initialState = {
 
 export const getComments = createAsyncThunk("comment/get", async (data, thunkAPI) => {
     try {
-        const res = await fetch("http://localhost:4000/comments")
+        const res = await fetch(process.env.BACK_URL + "/comments")
         const comments = res.json()
         if(comments.error) {
             return thunkAPI.rejectWithValue(comments.error)
@@ -22,7 +22,7 @@ export const getComments = createAsyncThunk("comment/get", async (data, thunkAPI
 })
 export const addComments = createAsyncThunk("comment/post", async ({commentText, id, author}, thunkAPI) => {
 try {
-    const res = await fetch("http://localhost:4000/createComment", {
+    const res = await fetch(process.env.BACK_URL + "/createComment", {
         method: 'POST', 
         headers: {
             'Content-Type': 'application/json'

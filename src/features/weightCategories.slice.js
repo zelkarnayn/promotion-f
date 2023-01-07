@@ -10,7 +10,7 @@ export const getWeightCategories = createAsyncThunk (
     'wCategories/get',
     async (data, thunkAPI) => {
         try {
-            const res = await fetch('http://localhost:4000/category')
+            const res = await fetch(process.env.BACK_URL + '/category')
             const wCategories = await res.json()
             if (wCategories.error) {
                 return thunkAPI.rejectWithValue(wCategories.error)

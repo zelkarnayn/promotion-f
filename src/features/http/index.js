@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const API_URL = 'http://localhost:4000'
+export const API_URL = 'https://vocal-centaur-3bd07f.netlify.app'
 
 const $api = axios.create({
     withCredentials: true,

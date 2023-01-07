@@ -1,14 +1,7 @@
 import React from 'react'
 import Points from '../points/Points'
 import styles from './Chemp.module.scss'
-import image1 from '../photos/1.png'
-import image2 from '../photos/2.png'
-import image3 from '../photos/3.png'
-import image4 from '../photos/4.png'
-import image5 from '../photos/5.png'
-import image6 from '../photos/6.png'
-import image7 from '../photos/7.png'
-import image8 from '../photos/8.png'
+import image1 from '../photos/1.jpg'
 import poyas from '../main/poyyas.png'
 
 export default function Chemp() {
@@ -78,7 +71,7 @@ export default function Chemp() {
                                 <p>0</p>
                             </div>
                         </div>
-                        <img className={styles.images} src={image2} alt=''/>
+                        <img className={styles.images} src={image1} alt=''/>
                     </div>
                 </div>
                 <div className={styles.block}>
@@ -108,7 +101,7 @@ export default function Chemp() {
                                 <p>0</p>
                             </div>
                         </div>
-                        <img className={styles.images} src={image3} alt=''/>
+                        <img className={styles.images} src={image1} alt=''/>
                     </div>
                 </div>
                 <div className={styles.block}>
@@ -138,7 +131,7 @@ export default function Chemp() {
                                 <p>0</p>
                             </div>
                         </div>
-                        <img className={styles.images} src={image4} alt=''/>
+                        <img className={styles.images} src={image1} alt=''/>
                     </div>
                 </div>
             </div>
@@ -170,7 +163,7 @@ export default function Chemp() {
                                 <p>0</p>
                             </div>
                         </div>
-                        <img className={styles.images} src={image5} alt=''/>
+                        <img className={styles.images} src={image1} alt=''/>
                     </div>
                 </div>
                 <div className={styles.block}>
@@ -200,7 +193,7 @@ export default function Chemp() {
                                 <p>0</p>
                             </div>
                         </div>
-                        <img className={styles.images} src={image6} alt=''/>
+                        <img className={styles.images} src={image1} alt=''/>
                     </div>
                 </div>
                 <div className={styles.block}>
@@ -230,7 +223,7 @@ export default function Chemp() {
                                 <p>0</p>
                             </div>
                         </div>
-                        <img className={styles.images} src={image7} alt=''/>
+                        <img className={styles.images} src={image1} alt=''/>
                     </div>
                 </div>
                 <div className={styles.block}>
@@ -260,7 +253,7 @@ export default function Chemp() {
                                 <p>0</p>
                             </div>
                         </div>
-                        <img className={styles.images} src={image8} alt=''/>
+                        <img className={styles.images} src={image1} alt=''/>
                     </div>
                 </div>
             </div>

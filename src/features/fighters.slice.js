@@ -10,7 +10,7 @@ export const getFighters = createAsyncThunk(
   "fighters/get",
   async (data, thunkAPI) => {
     try {
-      const res = await fetch("http://localhost:4000/fighters");
+      const res = await fetch(process.env.BACK_URL + "/fighters");
       const fighters = await res.json;
       if (fighters.error) {
         return thunkAPI.rejectWithValue(fighters.error);
@@ -38,7 +38,7 @@ export const postFighter = createAsyncThunk(
         image,
         weight,
       } = data;
-      const res = await fetch("http://localhost:4000/fighters", {
+      const res = await fetch(process.env.BACK_URL + "/fighters", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -7,7 +7,7 @@ const CardArray = () => {
     {
       id: 1,
       image:
-        "http://localhost:4000/images/fighters/13/IMG_4810.png",
+        "http://localhost:4000/images/fighters/13/112.jpg",
       name: "Ризван",
       lastName: "Яндаев",
       alias: "Кочевник",
@@ -20,7 +20,7 @@ const CardArray = () => {
     {
       id: 2,
       image:
-      "http://localhost:4000/images/fighters/13/IMG_4811.png",
+      "http://localhost:4000/images/fighters/13/112.jpg",
       name: "Асхаб",
       lastName: "Абдразаков",
       alias: "Мудрый",
@@ -33,7 +33,7 @@ const CardArray = () => {
     {
       id: 3,
       image:
-      "http://localhost:4000/images/fighters/13/IMG_4813.png",
+      "http://localhost:4000/images/fighters/13/112.jpg",
       name: "Лом-Али",
       lastName: "Байраев",
       alias: "Умный",
@@ -46,7 +46,7 @@ const CardArray = () => {
     {
       id: 4,
       image:
-      "http://localhost:4000/images/fighters/13/IMG_4814.png",
+      "http://localhost:4000/images/fighters/13/112.jpg",
       name: "Дени",
       lastName: "Мехтиев",
       alias: "Механик",
@@ -59,7 +59,7 @@ const CardArray = () => {
     {
       id: 5,
       image:
-      "http://localhost:4000/images/fighters/13/IMG_4817.png",
+      "http://localhost:4000/images/fighters/13/112.jpg",
       name: "Малик",
       lastName: "Янгулбаев",
       alias: "Скала",
@@ -72,7 +72,7 @@ const CardArray = () => {
     {
       id: 6,
       image:
-      "http://localhost:4000/images/fighters/13/IMG_4818.png",
+      "http://localhost:4000/images/fighters/13/112.jpg",
       name: "Адам",
       lastName: "Цуров",
       alias: "Адам успокойся",
@@ -85,7 +85,7 @@ const CardArray = () => {
     {
       id: 7,
       image:
-      "http://localhost:4000/images/fighters/13/IMG_4819.png",
+      "http://localhost:4000/images/fighters/13/112.jpg",
       name: "Дени",
       lastName: "Джукаев",
       alias: "Добряк",
@@ -98,7 +98,7 @@ const CardArray = () => {
     {
       id: 8,
       image:
-      "http://localhost:4000/images/fighters/13/IMG_4820.png",
+      "http://localhost:4000/images/fighters/13/112.jpg",
       name: "Саид",
       lastName: "Мартазанов",
       alias: "Препод",

@@ -8,7 +8,7 @@ const initialState = {
 
 export const getNews = createAsyncThunk("news/get", async (data, thunkAPI) => {
     try {
-        const res = await fetch("http://localhost:4000/news")
+        const res = await fetch(process.env.BACK_URL + "/news")
         const news = await res.json()
         if(news.error) {
             return thunkAPI.rejectWithValue(news.error)
@@ -25,7 +25,7 @@ export const addNews = createAsyncThunk("news/post", async ({title, photo, descr
     formData.append("img", photo)
 
 try {
-    const res = await fetch ("http://localhost:4000/createNews", {
+    const res = await fetch (process.env.BACK_URL + "/createNews", {
         method: 'POST',
         body: formData
     })
@@ -41,7 +41,7 @@ try {
 
 export const deleteNews = createAsyncThunk("news/delete", async (id, thunkAPI) => {
     try {
-        const res = await fetch(`http://localhost:4000/news/${id}`, {
+        const res = await fetch(`${process.env.BACK_URL}/news/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
