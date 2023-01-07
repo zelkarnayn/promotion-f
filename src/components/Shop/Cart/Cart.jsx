@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getCart } from "../../../features/cart.slice";
 import CartItem from "./CartItem";
-import { YMaps, Map, Placemark } from "react-yandex-maps";
 import styles from "./Cart.module.scss";
 
 const Cart = () => {
@@ -69,15 +68,6 @@ const Cart = () => {
             <input type="radio" name="choose-way" id="paragraph" />
           </div>
           <div className={styles.yandex_main}>
-      <YMaps>
-        <div>
-          <div className={styles.yandex_map}>
-            <Map defaultState={{ center: [43.371674, 46.122291], zoom: 15 }} width={"90%"} height={"300px"}>
-              <Placemark geometry={[43.371674, 46.122291]} />
-            </Map>
-          </div>
-        </div>
-      </YMaps>
     </div>
         </form>
       </div>
