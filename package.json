@@ -26,8 +26,7 @@
     "sass": "^1.56.2",
     "slick-carousel": "^1.8.1",
     "tinymce": "^6.3.1",
-    "web-vitals": "^2.1.4",
-    "yandex-map-react": "^1.1.1"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
