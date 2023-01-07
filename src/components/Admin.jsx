@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import AddFighter from "./Fighters/AddFighter";
+import AddFighter from "./fighters/AddFighter";
 import PostNews from "./news/PostNews"
 import AddProduct from './Shop/AddProduct';
 import styles from './Main.module.css'
