@@ -13,7 +13,7 @@ import NewsFull from './components/news/FullNews';
 import NewsForm from './components/news/NewsForm';
 import Cart from './components/Shop/Cart/Cart';
 import Product from './components/Shop/Product';
-import CardArray from './components/Cards/CardArray';
+// import CardArray from './components/Cards/CardArray';
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
           <Route path='/news/:id' element={<NewsFull/>}/>
           <Route path='/news-form/' element={<NewsForm/>}/>
           <Route path='/shop' element={<Shop/>}/>
-          <Route path='/fighters' element={<CardArray/>}/>
+          {/* <Route path='/fighters' element={<CardArray/>}/> */}
           <Route path='/admin' element={<Admin/>}/>
           <Route path="/cart" element = {<Cart/>} />
           <Route path="/product/:id" element = {<Product/>} />
